@@ -1,0 +1,53 @@
+2023-11-08 23:31:40.530  INFO 19096 --- [main] (system) com.jiejie.backend.BackendApplication    : Starting BackendApplication using Java 17.0.8 with PID 19096 (D:\springboot\SysManage\test_menu\backend\target\classes started by 22783 in D:\springboot\SysManage\test_menu)
+2023-11-08 23:31:40.531  INFO 19096 --- [main] (system) com.jiejie.backend.BackendApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-11-08 23:31:41.112  INFO 19096 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-08 23:31:41.115  INFO 19096 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-08 23:31:41.137  INFO 19096 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-11-08 23:31:41.579  INFO 19096 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-08 23:31:41.580  INFO 19096 --- [main] (system) o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-08 23:31:41.595  INFO 19096 --- [main] (system) o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-08 23:31:41.603  INFO 19096 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-08 23:31:41.603  INFO 19096 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-08 23:31:41.665  INFO 19096 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-08 23:31:41.665  INFO 19096 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1107 ms
+2023-11-08 23:31:41.954  WARN 19096 --- [main] (system) ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed
+2023-11-08 23:31:41.967  INFO 19096 --- [main] (system) o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-08 23:31:41.982  INFO 19096 --- [main] (system) .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-08 23:31:41.995 ERROR 19096 --- [main] (system) o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.jiejie.backend.service.impl.UserServiceImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jiejie.backend.service.impl.UserServiceImpl' in your configuration.
+
+2023-11-08 23:31:56.716  INFO 2104 --- [main] (system) com.jiejie.backend.BackendApplication    : Starting BackendApplication using Java 17.0.8 with PID 2104 (D:\springboot\SysManage\test_menu\backend\target\classes started by 22783 in D:\springboot\SysManage\test_menu)
+2023-11-08 23:31:56.718  INFO 2104 --- [main] (system) com.jiejie.backend.BackendApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-11-08 23:31:57.178  INFO 2104 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-08 23:31:57.180  INFO 2104 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-08 23:31:57.198  INFO 2104 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-11-08 23:31:57.545  INFO 2104 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-08 23:31:57.546  INFO 2104 --- [main] (system) o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-08 23:31:57.549  INFO 2104 --- [main] (system) o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-08 23:31:57.555  INFO 2104 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-08 23:31:57.555  INFO 2104 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-08 23:31:57.611  INFO 2104 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-08 23:31:57.611  INFO 2104 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 865 ms
+2023-11-08 23:31:58.311  INFO 2104 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e9b3b3c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c97f5e9, org.springframework.security.web.context.SecurityContextHolderFilter@4e61a863, org.springframework.security.web.header.HeaderWriterFilter@73234691, org.springframework.security.web.authentication.logout.LogoutFilter@71f29d91, com.jiejie.backend.filter.JwtAuthenticationFilter@29dcdd1c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79c1ccf7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fea9a7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27fc0217, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32e7b78d, org.springframework.security.web.session.SessionManagementFilter@270b8c2a, org.springframework.security.web.access.ExceptionTranslationFilter@b6136eb, org.springframework.security.web.access.intercept.AuthorizationFilter@69bca406]
+2023-11-08 23:31:58.527  INFO 2104 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-08 23:31:58.534  INFO 2104 --- [main] (system) com.jiejie.backend.BackendApplication    : Started BackendApplication in 2.137 seconds (process running for 2.482)
+2023-11-08 23:33:25.298  INFO 2104 --- [http-nio-8080-exec-3] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-08 23:33:25.298  INFO 2104 --- [http-nio-8080-exec-3] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-08 23:33:25.299  INFO 2104 --- [http-nio-8080-exec-3] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-08 23:33:25.427  INFO 2104 --- [http-nio-8080-exec-3] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-08 23:33:25.681  INFO 2104 --- [http-nio-8080-exec-3] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@144913a5
+2023-11-08 23:33:25.681  INFO 2104 --- [http-nio-8080-exec-3] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
