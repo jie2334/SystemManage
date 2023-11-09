@@ -10,4 +10,6 @@ import com.jiejie.backend.entity.vo.RegisterVo;
  **/
 public interface SmSService {
     RegisterVo sendCode(String phone);
+
+    Boolean register(RegisterVo registerVo);
 }

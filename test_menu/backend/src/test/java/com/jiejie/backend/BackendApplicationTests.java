@@ -2,6 +2,8 @@ package com.jiejie.backend;
 
 
 import com.auth0.jwt.interfaces.DecodedJWT;
+import com.jiejie.backend.entity.dto.SysUser;
+import com.jiejie.backend.service.UserService;
 import com.jiejie.backend.utils.Constant;
 import com.jiejie.backend.utils.JwtUtils;
 import jakarta.annotation.Resource;
@@ -16,6 +18,8 @@ import java.util.concurrent.TimeUnit;
 @SpringBootTest
 class BackendApplicationTests {
 
+    @Resource
+    UserService userService;
     @Resource
     StringRedisTemplate stringRedisTemplate;
     @Resource
@@ -47,5 +51,16 @@ class BackendApplicationTests {
         int randomNumber = random.nextInt(9000) + 1000; // 生成一个1000到9999之间的随机数
         String uuid = String.format("%04d", randomNumber); // 将随机数格式化为四位数的字符串
         stringRedisTemplate.opsForValue().set(Constant.VERIFY_EMAIL_LIMIT,uuid, 60, TimeUnit.SECONDS);
+    }
+
+    @Test
+    public void testGetCode() {
+        String code = stringRedisTemplate.opsForValue().get("15972613826");
+        System.out.println("code = " + code);
+    }
+
+    @Test
+    public void testSave() {
+
     }
 }

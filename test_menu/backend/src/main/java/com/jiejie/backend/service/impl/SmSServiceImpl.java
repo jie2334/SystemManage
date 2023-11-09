@@ -1,11 +1,17 @@
 package com.jiejie.backend.service.impl;
 
+import com.jiejie.backend.entity.dto.SysUser;
 import com.jiejie.backend.entity.vo.RegisterVo;
 import com.jiejie.backend.service.SmSService;
+import com.jiejie.backend.service.UserService;
+import com.jiejie.backend.utils.Constant;
 import com.jiejie.backend.utils.HttpUtils;
 import jakarta.annotation.Resource;
+import org.apache.commons.lang.StringUtils;
 import org.apache.http.HttpResponse;
+import org.springframework.beans.BeanUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 
@@ -25,6 +31,9 @@ public class SmSServiceImpl implements SmSService {
     @Resource
     StringRedisTemplate stringRedisTemplate;
 
+    @Resource
+    UserService userService;
+
 
     @Override
     public RegisterVo sendCode(String phone) {
@@ -33,9 +42,31 @@ public class SmSServiceImpl implements SmSService {
         int randomNumber = random.nextInt(9000) + 1000; // 生成一个1000到9999之间的随机数
         String code = String.format("%04d", randomNumber); // 将随机数格式化为四位数的字符串
         //设置验证码有效期
-        stringRedisTemplate.opsForValue().set(phone,code, 5,TimeUnit.MINUTES);
+        stringRedisTemplate.opsForValue().set(Constant.REGISTER_PHONE_NUMBER+phone,code, 5,TimeUnit.MINUTES);
 
         return sendMessage(phone,code);
+    }
+
+    @Override
+    public Boolean register(RegisterVo registerVo) {
+
+        /**
+         * 从redis里面去除验证码，判断是否过期，过期重新发送验证码
+         * 没有过期，往数据库里面储存用户，并返回用户的token
+         *
+         * 可以通过手机号和邮箱注册
+         *
+         */
+        boolean save = false;
+        String code = stringRedisTemplate.opsForValue().get(registerVo.getPhone());
+        if (!StringUtils.isBlank(code)){
+            SysUser user = new SysUser();
+            //bean之间的转换
+            BeanUtils.copyProperties(registerVo, user);
+            user.setPassword(new BCryptPasswordEncoder().encode(registerVo.getPassword()));
+            save = userService.save(user);
+        }
+        return save;
     }
 
     private RegisterVo sendMessage(String phone, String code) {

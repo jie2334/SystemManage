@@ -4,43 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f4b663-d7f3-47e2-8975-b572692346d4" name="Changes" comment="security环境搭建">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/entity/vo/RegisterVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/SmSService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/impl/SmSServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/utils/HttpUtils.java" afterDir="false" />
+    <list default="true" id="d6f4b663-d7f3-47e2-8975-b572692346d4" name="Changes" comment="阿里云短信验证">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/config/MybatisPlusHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/entity/dto/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/entity/dto/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/entity/vo/RegisterVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/entity/vo/RegisterVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/SmSService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/SmSService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/impl/SmSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/impl/SmSServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/utils/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/jiejie/backend/BackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/jiejie/backend/BackendApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/BackendApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/config/WebConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/entity/BaseData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/entity/RestBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/entity/dto/SysUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/entity/vo/AuthorizeVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/filter/CorsFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/filter/JwtAuthenticationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/utils/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/utils/FlowUtils$LimitAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/utils/FlowUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/jiejie/backend/utils/JwtUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2023-11-08-spring-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/2023-11-08-spring-0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +69,22 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RunManager" selected="Spring Boot.BackendApplication">
+    <configuration name="BackendApplicationTests.testGetCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiejie.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiejie.backend" />
+      <option name="MAIN_CLASS_NAME" value="com.jiejie.backend.BackendApplicationTests" />
+      <option name="METHOD_NAME" value="testGetCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackendApplicationTests.testOSS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <extension name="coverage">
@@ -121,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BackendApplicationTests.testGetCode" />
         <item itemvalue="JUnit.BackendApplicationTests.testOSS" />
       </list>
     </recent_temporary>
@@ -136,7 +126,7 @@
       <workItem from="1699456661606" duration="1876000" />
       <workItem from="1699493767661" duration="6638000" />
       <workItem from="1699502010566" duration="1748000" />
-      <workItem from="1699512432563" duration="2330000" />
+      <workItem from="1699512432563" duration="6392000" />
     </task>
     <task id="LOCAL-00001" summary="security环境搭建">
       <option name="closed" value="true" />
@@ -154,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699457956883</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="阿里云短信验证">
+      <option name="closed" value="true" />
+      <created>1699515079601</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699515079601</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,20 +171,36 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="security环境搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="security环境搭建" />
+    <MESSAGE value="阿里云短信验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="阿里云短信验证" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/impl/SmSServiceImpl.java</url>
-          <line>32</line>
+          <line>41</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/controller/AuthController.java</url>
-          <line>28</line>
+          <line>33</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/controller/AuthController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/impl/SmSServiceImpl.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/jiejie/backend/service/impl/SmSServiceImpl.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

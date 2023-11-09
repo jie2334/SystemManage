@@ -1,7 +1,12 @@
 package com.jiejie.backend.entity.dto;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.jiejie.backend.entity.BaseData;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import java.util.Date;
 import java.io.Serializable;
@@ -13,11 +18,13 @@ import java.io.Serializable;
  * @since 2023-11-08 16:30:39
  */
 @Data
+@RequiredArgsConstructor
 public class SysUser implements BaseData,Serializable {
     private static final long serialVersionUID = 797383903167773072L;
     /**
      * 会员id
      */
+    @TableId(type = IdType.AUTO)
     private Long id;
     /**
      * 用户名
@@ -74,6 +81,7 @@ public class SysUser implements BaseData,Serializable {
     /**
      * 删除标记（0:不可用 1:可用）
      */
+    @TableLogic
     private Integer isDeleted;
 
 
