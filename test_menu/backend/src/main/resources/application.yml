@@ -43,13 +43,7 @@ spring:
       credentials: false
       methods: '*'
 
-aliyun:
-  sms:
-    sms-access-key-id: LTAI5tN6ULLZdchJcgVzjpDK
-    sms-access-key-secret: SaqdCPv3ziqAdIPmpXgpp62lprAZXd
-    sms-endpoint: dysmsapi.aliyuncs.com
-    sms-template-code: SMS_154950909
-    sms-sign-name: 阿里云短信测试
+
 
 mybatis-plus:
   global-config:
