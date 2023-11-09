@@ -53,3 +53,26 @@ Consider defining a bean of type 'com.jiejie.backend.service.impl.UserServiceImp
 2023-11-08 23:33:25.681  INFO 2104 --- [http-nio-8080-exec-3] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2023-11-08 23:38:12.943  INFO 2104 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-11-08 23:38:12.950  INFO 2104 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-08 23:41:41.767  INFO 27100 --- [main] (system) com.jiejie.backend.BackendApplication    : Starting BackendApplication using Java 17.0.8 with PID 27100 (D:\springboot\SysManage\test_menu\backend\target\classes started by 22783 in D:\springboot\SysManage\test_menu)
+2023-11-08 23:41:41.769  INFO 27100 --- [main] (system) com.jiejie.backend.BackendApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-11-08 23:41:42.216  INFO 27100 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-08 23:41:42.218  INFO 27100 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-08 23:41:42.232  INFO 27100 --- [main] (system) .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-11-08 23:41:42.557  INFO 27100 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-08 23:41:42.558  INFO 27100 --- [main] (system) o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-08 23:41:42.561  INFO 27100 --- [main] (system) o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-08 23:41:42.566  INFO 27100 --- [main] (system) o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-08 23:41:42.566  INFO 27100 --- [main] (system) o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-08 23:41:42.621  INFO 27100 --- [main] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-08 23:41:42.621  INFO 27100 --- [main] (system) w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 821 ms
+2023-11-08 23:41:43.242  INFO 27100 --- [main] (system) o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c25daad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fdc2db6, org.springframework.security.web.context.SecurityContextHolderFilter@3b25709e, org.springframework.security.web.header.HeaderWriterFilter@3bdbf8d3, org.springframework.security.web.authentication.logout.LogoutFilter@76220ef1, com.jiejie.backend.filter.JwtAuthenticationFilter@1a717d79, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48aa0813, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40013051, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43294e9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5be69f7e, org.springframework.security.web.session.SessionManagementFilter@7482309c, org.springframework.security.web.access.ExceptionTranslationFilter@3e28af44, org.springframework.security.web.access.intercept.AuthorizationFilter@6b64429e]
+2023-11-08 23:41:43.429  INFO 27100 --- [main] (system) o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-08 23:41:43.434  INFO 27100 --- [main] (system) com.jiejie.backend.BackendApplication    : Started BackendApplication in 1.974 seconds (process running for 2.327)
+2023-11-08 23:41:53.904  INFO 27100 --- [http-nio-8080-exec-2] (system) o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-08 23:41:53.904  INFO 27100 --- [http-nio-8080-exec-2] (system) o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-08 23:41:53.905  INFO 27100 --- [http-nio-8080-exec-2] (system) o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-08 23:41:59.537  INFO 27100 --- [http-nio-8080-exec-3] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-08 23:41:59.712  INFO 27100 --- [http-nio-8080-exec-3] (system) com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a46b8f5
+2023-11-08 23:41:59.714  INFO 27100 --- [http-nio-8080-exec-3] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-08 23:42:27.617  INFO 27100 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-08 23:42:27.622  INFO 27100 --- [SpringApplicationShutdownHook] (system) com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,18 +1,23 @@
 package com.jiejie.backend;
 
-import com.auth0.jwt.interfaces.Claim;
+
 import com.auth0.jwt.interfaces.DecodedJWT;
+import com.jiejie.backend.utils.Constant;
 import com.jiejie.backend.utils.JwtUtils;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import java.util.Map;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 @SpringBootTest
 class BackendApplicationTests {
 
+    @Resource
+    StringRedisTemplate stringRedisTemplate;
     @Resource
     JwtUtils jwtUtils;
 
@@ -33,6 +38,14 @@ class BackendApplicationTests {
         if (jwt == null) {
             System.out.println("jwt是空的！！！");
         }
+    }
 
+    @Test
+    public void testOSS() {
+        //生成验证码
+        Random random = new Random();
+        int randomNumber = random.nextInt(9000) + 1000; // 生成一个1000到9999之间的随机数
+        String uuid = String.format("%04d", randomNumber); // 将随机数格式化为四位数的字符串
+        stringRedisTemplate.opsForValue().set(Constant.VERIFY_EMAIL_LIMIT,uuid, 60, TimeUnit.SECONDS);
     }
 }

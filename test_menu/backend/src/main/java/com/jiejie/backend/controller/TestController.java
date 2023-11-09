@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date: 2023/11/8
  **/
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/error")
 public class TestController {
 
 
